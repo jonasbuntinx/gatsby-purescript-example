@@ -1,0 +1,35 @@
+{
+  "name": "gatsby-purescript-example",
+  "version": "0.1.0",
+  "description": "Example app using Gatsby.js with Purescript",
+  "keywords": [
+    "Gatsby.js",
+    "Purescript",
+    "React"
+  ],
+  "author": "Jonas Buntinx",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.19.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "tailwindcss": "^1.1.4"
+  },
+  "devDependencies": {
+    "pscid": "^2.8.5",
+    "purescript": "^0.13.6",
+    "purescript-psa": "^0.7.3",
+    "purty": "^4.5.2",
+    "spago": "^0.13.1"
+  },
+  "scripts": {
+    "postinstall": "$(yarn bin)/spago install",
+    "clean": "$(yarn bin)/gatsby clean && rm -Rf .cache public output",
+    "dev": "$(yarn bin)/spago build --watch & $(yarn bin)/gatsby develop",
+    "pscid:build": "$(yarn bin)/spago build",
+    "build": "$(yarn bin)/spago build && $(yarn bin)/gatsby build",
+    "start": "yarn clean && yarn build && $(yarn bin)/gatsby serve",
+    "id": "$(yarn bin)/pscid",
+    "test": "$(yarn bin)/spago test"
+  }
+}
