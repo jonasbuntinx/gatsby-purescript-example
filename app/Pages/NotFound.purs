@@ -1,4 +1,4 @@
-module Pages.Home (mkHome) where
+module Pages.NotFound (mkNotFound) where
 
 import Prelude
 import Effect (Effect)
@@ -6,10 +6,10 @@ import Pages.Navigation (mkNavigation)
 import React.Basic.DOM as R
 import React.Basic.Hooks as React
 
-mkHome :: Effect (React.ReactComponent {})
-mkHome = do
+mkNotFound :: Effect (React.ReactComponent {})
+mkNotFound = do
   navigation <- mkNavigation
-  React.component "Home" \props -> React.do
+  React.component "NotFound" \props -> React.do
     pure $ render { navigation } props
   where
   render slots props =
@@ -24,16 +24,7 @@ mkHome = do
                   [ R.h1
                       { className: "text-3xl font-bold"
                       , children:
-                        [ R.text "Home"
-                        ]
-                      }
-                  , R.div
-                      { className: "w-4/5 pt-3 border-b-2 border-teal-500"
-                      }
-                  , R.p
-                      { className: "pt-4 text-sm"
-                      , children:
-                        [ R.text "Welcome to my Gatsby.js with Purescript Example!"
+                        [ R.text "NotFound"
                         ]
                       }
                   ]
@@ -43,7 +34,7 @@ mkHome = do
                 , children:
                   [ R.img
                       { className: "shadow-2xl"
-                      , src: "https://source.unsplash.com/IuLgi9PWETU"
+                      , src: "https://source.unsplash.com/lXFAF-8wnNs"
                       }
                   ]
                 }
