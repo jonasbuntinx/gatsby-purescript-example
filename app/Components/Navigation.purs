@@ -13,7 +13,7 @@ mkNavigation =
   where
   render props =
     R.nav
-      { className: "max-w-5xl mx-auto text-gray-800 w-full flex items-center justify-between py-3 px-12"
+      { className: "text-gray-800 w-full flex items-center justify-between py-3 px-4"
       , children:
         [ R.div
             { className: "font-extrabold text-xl"
