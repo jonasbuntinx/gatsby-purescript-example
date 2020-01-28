@@ -1,3 +1,1 @@
-import { mkHome } from "../../app/Pages/Home.purs";
-
-export default mkHome();
+module.exports = require("../../app/Pages/Home.purs").mkHome();

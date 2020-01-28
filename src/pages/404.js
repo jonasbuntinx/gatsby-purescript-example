@@ -1,3 +1,1 @@
-import { mkNotFound } from "../../app/Pages/NotFound.purs";
-
-export default mkNotFound();
+module.exports = require("../../app/Pages/NotFound.purs").mkNotFound();
