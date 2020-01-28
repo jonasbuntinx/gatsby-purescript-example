@@ -6,6 +6,23 @@
 
 module.exports = {
   plugins: [
-    `gatsby-plugin-postcss`,
+    "gatsby-plugin-purescript",
+    {
+      resolve: "gatsby-plugin-postcss",
+      options: {
+        postCssPlugins: [
+          require("tailwindcss")("./tailwind.config.js"),
+          require("autoprefixer")
+        ]
+      }
+    },
+    {
+      resolve: "gatsby-plugin-purgecss",
+      options: {
+        content: ["gatsby-ssr.js", "app/**/*.purs"],
+        tailwind: true,
+        purgeOnly: ["styles/styles.css"]
+      }
+    },
   ]
 };

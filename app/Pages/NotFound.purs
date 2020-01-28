@@ -27,6 +27,9 @@ mkNotFound = do
                         [ R.text "NotFound"
                         ]
                       }
+                  , R.div
+                      { className: "w-4/5 pt-3 border-b-2 border-teal-500"
+                      }
                   ]
                 }
             , R.div

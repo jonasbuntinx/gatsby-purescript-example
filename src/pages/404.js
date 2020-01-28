@@ -1,3 +1,3 @@
-import { mkNotFound } from '../../output/Pages.NotFound/index.js';
+import { mkNotFound } from '../../app/Pages/NotFound.purs';
 
 export default mkNotFound();

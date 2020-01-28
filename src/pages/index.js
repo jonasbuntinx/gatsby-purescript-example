@@ -1,3 +1,3 @@
-import { mkHome } from '../../output/Pages.Home/index.js';
+import { mkHome } from '../../app/Pages/Home.purs';
 
 export default mkHome();

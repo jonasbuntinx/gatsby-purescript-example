@@ -12,6 +12,8 @@
   "dependencies": {
     "gatsby": "^2.19.5",
     "gatsby-plugin-postcss": "2.1.19",
+    "gatsby-plugin-purescript": "^2.0.0",
+    "gatsby-plugin-purgecss": "4.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "tailwindcss": "^1.1.4"
@@ -26,9 +28,9 @@
   "scripts": {
     "postinstall": "$(yarn bin)/spago install",
     "clean": "$(yarn bin)/gatsby clean && rm -Rf .cache public output",
-    "dev": "$(yarn bin)/spago build --watch & $(yarn bin)/gatsby develop",
+    "dev": "$(yarn bin)/gatsby develop",
     "pscid:build": "$(yarn bin)/spago build",
-    "build": "$(yarn bin)/spago build && $(yarn bin)/gatsby build",
+    "build": "$(yarn bin)/gatsby build",
     "start": "yarn clean && yarn build && $(yarn bin)/gatsby serve",
     "id": "$(yarn bin)/pscid",
     "test": "$(yarn bin)/spago test"
