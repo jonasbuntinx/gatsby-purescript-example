@@ -28,10 +28,11 @@ mkNavigation =
                     [ G.link
                         { to: "/"
                         , children:
-                          R.a
-                            { className: "inline-block py-2 px-4 font-bold"
-                            , children: [ R.text "Home" ]
-                            }
+                          [ R.a
+                              { className: "inline-block py-2 px-4 font-bold"
+                              , children: [ R.text "Home" ]
+                              }
+                          ]
                         }
                     ]
                   }
@@ -40,10 +41,11 @@ mkNavigation =
                     [ G.link
                         { to: "/about"
                         , children:
-                          R.a
-                            { className: "inline-block py-2 px-4 font-bold"
-                            , children: [ R.text "About" ]
-                            }
+                          [ R.a
+                              { className: "inline-block py-2 px-4 font-bold"
+                              , children: [ R.text "About" ]
+                              }
+                          ]
                         }
                     ]
                   }

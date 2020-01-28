@@ -4,7 +4,7 @@ import Prim.Row (class Union)
 import React.Basic (JSX, ReactComponent, element)
 
 type Props_link
-  = ( children :: JSX
+  = ( children :: Array JSX
     , to :: String
     )
 
